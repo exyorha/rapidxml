@@ -58,7 +58,7 @@ namespace rapidxml
         node_iterator operator++(int)
         {
             node_iterator tmp = *this;
-            ++this;
+            ++*this;
             return tmp;
         }
 
@@ -72,7 +72,7 @@ namespace rapidxml
         node_iterator operator--(int)
         {
             node_iterator tmp = *this;
-            ++this;
+            --*this;
             return tmp;
         }
 
@@ -137,7 +137,7 @@ namespace rapidxml
         attribute_iterator operator++(int)
         {
             attribute_iterator tmp = *this;
-            ++this;
+            ++*this;
             return tmp;
         }
 
@@ -151,7 +151,7 @@ namespace rapidxml
         attribute_iterator operator--(int)
         {
             attribute_iterator tmp = *this;
-            ++this;
+            --*this;
             return tmp;
         }
 
